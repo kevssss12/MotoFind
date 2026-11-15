@@ -1,0 +1,55 @@
+name: motofind
+description: "MotoFind - Mobile Application for Real-Time Location and Availability Tracking of Motorcycle Parts."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Firebase
+  firebase_core: ^4.12.1
+  firebase_auth: ^6.5.6
+  cloud_firestore: ^6.7.1
+  firebase_storage: ^13.4.5
+
+  # Utilities
+  intl: ^0.20.2
+  image_picker: ^1.1.2
+  http: ^1.2.2
+
+  # Google Maps
+  google_maps_flutter: ^2.12.3
+  geolocator: ^14.0.2
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.14.4
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/gcash_qr.png
+    - assets/motofind.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  windows:
+    generate: true
+    image_path: "assets/motofind.png"
+    icon_size: 48
+  image_path: "assets/motofind.png"
+  min_sdk_android: 21
